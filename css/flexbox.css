@@ -1,5 +1,38 @@
-.cabecalhoPrincipal .container {
+.cabecalhoPrincipal .container { /** pai dos elementos que quero posicionar **/
+    display: flex; /** colocar elementos um do lado do outro (ex inline-block)  **/
+    align-items: center; /** colocar elementos no centro **/
+    justify-content: space-between;  /** se houver espaço entre os elementos, colocar esse espaço entre eles **/
+}
+
+.cabecalhoPrincipal-nav { /** pai dos elementos que quero posicionar **/
+    display: flex;
+}
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rodapePrincipal-patrocinadores-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-around;
+    width: 75%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    /** flex-direction: column;  por padrão ele coloca row, quando colocamos column ele coloca um embaixo do outro **/ 
+    /** flex-wrap: wrap;  de acordo com o height ele se desloca para o lado quando não couber mais no pai **/
+    flex-flow: column wrap; /** substitui as duas linhas de cima **/
+    height: 250px;
+    
 }
